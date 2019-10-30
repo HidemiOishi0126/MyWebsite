@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>マイページ</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/mypage.css">
+
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="header-top">
+			<a href="datepicker.html">ネット予約システム</a>
+		</div>
+		<div class="header-list">
+			<a href="signup.html">新規登録</a> <a href="mypage.html">マイページ</a> <a
+				href="datepickerforadmin.html">管理者</a> <a href="login.html">ログアウト</a>
+		</div>
+	</header>
+	<!-- /header -->
+
+	<div class="text-center">
+		<h1>マイページ</h1>
+	</div>
+	<div class="container-userInfo">
+		<div class="text-center">
+			<h4 class="userInfo">ユーザ情報</h4>
+		</div>
+		<form>
+			<div class="form-group row">
+				<label for="staticId" class="col-sm-6 col-form-label">ID</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="staticId" value="aaaa">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticPass" class="col-sm-6 col-form-label">パスワード</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="staticPass" value="password">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticName" class="col-sm-6 col-form-label">氏名</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="staticName" value="ユーザ氏名">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticupdateTime" class="col-sm-6 col-form-label">情報更新日時</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="staticupdateTime" value="0000/00/00/00:00">
+				</div>
+			</div>
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg">登録内容変更</button>
+
+				<button type="button" class="btn btn-primary btn-lg">アカウント削除</button>
+			</div>
+
+		</form>
+	</div>
+
+	<br>
+	<br>
+	<hr>
+
+	<div class="container-history">
+		<div class="text-center">
+			<h4>ご予約履歴</h4>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">ご予約日</th>
+					<th scope="col">来店時刻</th>
+					<th scope="col">人数</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0000/00/00</td>
+					<td>00:00</td>
+					<td>0名</td>
+					<td><a href=""><button type="submit"
+								class="btn btn-primary">予約変更</button></a>
+						<a href=""><button type="submit"
+								class="btn btn-primary">予約削除</button> </a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+</html>

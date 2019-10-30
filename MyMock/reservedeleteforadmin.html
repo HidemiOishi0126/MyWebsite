@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>管理者用予約取り消し</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css"
+	href="css/reservedeleteforadmin.css">
+
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+		<div class="header-top">
+			<a href="datepicker.html">ネット予約システム</a>
+		</div>
+		<div class="header-list">
+			<a href="signup.html">新規登録</a> <a href="mypage.html">マイページ</a> <a
+				href="datepickerforadmin.html">管理者</a> <a href="login.html">ログアウト</a>
+		</div>
+	</header>
+	<!-- /header -->
+	<div class="container">
+
+		<form>
+			<div class="form-group row">
+				<label for="staticId" class="col-sm-6 col-form-label">ID</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="staticId" value="aaaa">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticName" class="col-sm-6 col-form-label">予約者氏名</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="staticName" value="ユーザ氏名">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticTime" class="col-sm-6 col-form-label">予約日</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="date" value="0000/00/00">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticTime" class="col-sm-6 col-form-label">予約時刻</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext"
+						id="time" value="00:00">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="staticNum" class="col-sm-6 col-form-label">人数</label>
+				<div class="col-sm-6">
+					<input type="text" readonly class="form-control-plaintext" id="Num"
+						value="2">
+				</div>
+			</div>
+
+
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg">予約削除</button>
+			</div>
+
+		</form>
+
+	</div>
+
+
+</body>
+</html>
